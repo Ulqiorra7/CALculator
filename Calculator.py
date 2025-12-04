@@ -8,7 +8,7 @@ row_value, col_value, flag, text = 0, 0, '1', ''
 Main_Form = Tk() 
 Main_Form.geometry("250x300")
 Main_Form.title("Калькулятор")
-Main_Form.iconbitmap(os.path.dirname(os.path.realpath(file)) + '\\favicon.ico')
+Main_Form.iconbitmap(os.path.dirname(os.path.realpath(__file__)) + '\\favicon.ico')
 label = ttk.Label(background="White",text="0",width="30",anchor='e')
 label.pack(pady=2)
 frame = tk.Frame(Main_Form)
@@ -82,4 +82,5 @@ for button in buttons:
         col_value = 0
         row_value += 1
 Main_Form.mainloop()
+
 
