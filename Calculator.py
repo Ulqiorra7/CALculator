@@ -21,9 +21,9 @@ def button_click(value):
             label.config(text = value)  
         else: label.config(text = label.cget("text") + value)
     elif value == 'x^2' or value == '1/x' or value == '%' or value == u'\u221a' or value == '+/-':
-        if value == 'x^2': text = str((float(label.cget("text")))2)
+        if value == 'x^2': text = str((float(label.cget("text"))) ** 2)
         elif value == '%': text = str((float(label.cget("text")))/100)
-        elif value == u'\u221a': text = str((float(label.cget("text")))(0.5))
+        elif value == u'\u221a': text = str((float(label.cget("text"))) ** (0.5))
         elif value == '+/-': text = str((float(label.cget("text")))*(-1))
         else: 
             try: text = str(1/(float(label.cget("text")))) 
@@ -82,3 +82,4 @@ for button in buttons:
         col_value = 0
         row_value += 1
 Main_Form.mainloop()
+
