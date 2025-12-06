@@ -1,17 +1,9 @@
 set -e  
 
-REPO_URL="https://github.com/Ulqiorra7/CALculator"
-PROJECT_DIR="calculator_project"
+PROJECT_DIR="."
 
-echo "=== Шаг 1: Загрузка актуального кода из Git ==="
-if [ -d "./$PROJECT_DIR" ]; then
-    cd "./$PROJECT_DIR"
-    git pull origin main
-else
-    echo "Клонирование репозитория..."
-    git clone "$REPO_URL" "$PROJECT_DIR"
-    cd "./$PROJECT_DIR"
-fi
+echo "=== Шаг 1: Проверка кода ==="
+cd "$PROJECT_DIR"
 
 echo "=== Шаг 2: Подготовка окружения и сборка тестов ==="
 
