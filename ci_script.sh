@@ -88,4 +88,5 @@ echo "Приложение успешно установлено."
 
 deactivate
 echo "=== CI успешно завершён ==="
-echo "Для запуска калькулятора выполните: python -m ./calculator_project/Calculator"
+echo "Для запуска калькулятора перейдите в директорию: cd calculator_project"
+echo "И выполните команду: python -m Calculator.py"
